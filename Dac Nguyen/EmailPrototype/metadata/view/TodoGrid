@@ -1,0 +1,39 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "todogrid",
+        "designer|userClassName": "TodoGrid",
+        "itemId": null,
+        "title": null
+    },
+    "designerId": "7b3bcbb8-1475-4896-9f61-1a231da57256",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Boolean",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dataIndex": "bool",
+                "text": "Boolean"
+            },
+            "designerId": "5c37633b-58d3-4452-a9c5-200a5b421b7c"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "3c927bed-0426-477a-a3f8-b67e46dd7d0c"
+        }
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MailGridController"
+    },
+    "designerId": "e0166966-9b93-41a6-8171-5f01ce492e44",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mailgrid",
+                "designer|targetType": "Ext.selection.CheckboxModel",
+                "fn": "onCheckboxModelDeselect",
+                "implHandler": [
+                    "//alert('Checkbox Select');\r",
+                    "var numberOfSelected = rowmodel.getSelection().length;\r",
+                    "var propertyPanel = Ext.ComponentQuery.query('panel#properties')[0];\r",
+                    "var displayPreview = Ext.ComponentQuery.query('textareafield#displaypreview')[0];\r",
+                    "//debugger;\r",
+                    "if(propertyPanel.items.length > 0) {\r",
+                    "    propertyPanel.removeAll();\r",
+                    "}\r",
+                    "if(numberOfSelected === 1) {\r",
+                    "     var arrDisplayField = new Array();\r",
+                    "    var itemSelected = rowmodel.getSelection()[0];\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('Subject',itemSelected.get('subject')));\r",
+                    "  //  debugger;\r",
+                    "    var dateReceived = Ext.Date.parse(itemSelected.get('received'),'Y-m-d H:i:s');\r",
+                    "    arrDisplayField.push(this.buildPropertyDisplayField('Received',Ext.Date.format(dateReceived, 'F j, Y, h:iA')));\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('From',itemSelected.get('from')));\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('To',itemSelected.get('to')));\r",
+                    "     propertyPanel.add(arrDisplayField);\r",
+                    "     displayPreview.setValue(record.get('message'));\r",
+                    "} else {\r",
+                    "    propertyPanel.add({html: 'Please select 1 item only to view property'});\r",
+                    "    displayPreview.setValue('Please select 1 item only to view property');\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "deselect",
+                "scope": "me"
+            },
+            "designerId": "94394b8d-8c40-4440-b8fb-2367030cbb9f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mailgrid",
+                "designer|targetType": "Ext.selection.CheckboxModel",
+                "fn": "onCheckboxModelSelect",
+                "implHandler": [
+                    "//alert('Checkbox Select');\r",
+                    "var numberOfSelected = rowmodel.getSelection().length;\r",
+                    "var propertyPanel = Ext.ComponentQuery.query('panel#properties')[0];\r",
+                    "var displayPreview = Ext.ComponentQuery.query('textareafield#displaypreview')[0];\r",
+                    "//debugger;\r",
+                    "if(propertyPanel.items.length > 0) {\r",
+                    "    propertyPanel.removeAll();\r",
+                    "}\r",
+                    "if(numberOfSelected === 1) {\r",
+                    "     var arrDisplayField = new Array();\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('Subject',record.get('subject')));\r",
+                    "  //  debugger;\r",
+                    "    var dateReceived = Ext.Date.parse(record.get('received'),'Y-m-d H:i:s');\r",
+                    "    arrDisplayField.push(this.buildPropertyDisplayField('Received',Ext.Date.format(dateReceived, 'F j, Y, h:iA')));\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('From',record.get('from')));\r",
+                    "     arrDisplayField.push(this.buildPropertyDisplayField('To',record.get('to')));\r",
+                    "     propertyPanel.add(arrDisplayField);\r",
+                    "    displayPreview.setValue(record.get('message'));\r",
+                    "} else {\r",
+                    "    propertyPanel.add({html: 'Please select 1 item only to view property'});\r",
+                    "    displayPreview.setValue('Please select 1 item only to view property');\r",
+                    "}\r",
+                    ""
+                ],
+                "name": "select",
+                "scope": "me"
+            },
+            "designerId": "5b17cbbb-130d-4c4b-8070-8724d60d8c13"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "label",
+                    "value"
+                ],
+                "fn": "buildPropertyDisplayField",
+                "implHandler": [
+                    "var cfg = {\r",
+                    "    xtype: 'displayfield',\r",
+                    "    fieldLabel: label,\r",
+                    "    labelAlign: 'top',\r",
+                    "    labelStyle: 'color:#666;font-weight:bold;',\r",
+                    "    value: value} ;\r",
+                    "return cfg;\r",
+                    ""
+                ]
+            },
+            "designerId": "c1a90cad-cd81-44bd-8ad2-292b71ff69da"
+        }
+    ]
+}

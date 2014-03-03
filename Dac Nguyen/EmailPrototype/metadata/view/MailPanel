@@ -1,0 +1,62 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mailpanel",
+        "designer|userClassName": "MailPanel",
+        "itemId": null,
+        "layout": "accordion",
+        "title": "Mail Panel",
+        "width": 200
+    },
+    "designerId": "02e265a9-d67f-4f48-9058-4fd88567cfb8",
+    "cn": [
+        {
+            "type": "Ext.tree.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapseFirst": false,
+                "displayField": "folder",
+                "dock": null,
+                "itemId": "foldertree",
+                "rootVisible": false,
+                "stateful": true,
+                "store": "MailTreeStore",
+                "title": "Mail"
+            },
+            "designerId": "32eb5b66-b619-4b09-bf78-a87b6e09cd4e",
+            "cn": [
+                {
+                    "type": "Ext.tree.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "e54c2141-e7d2-4043-8dca-397207852c90"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "todopanel",
+                "title": "To Dos"
+            },
+            "designerId": "09e4b053-01c1-44c5-9c43-8a8a123a89f3"
+        }
+    ]
+}

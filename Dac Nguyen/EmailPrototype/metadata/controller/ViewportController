@@ -1,0 +1,12 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ViewportController"
+    },
+    "designerId": "c65bc537-2034-4e57-af3c-fe7bf6d78381"
+}

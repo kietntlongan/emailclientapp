@@ -1,0 +1,68 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MailFolder"
+    },
+    "designerId": "9b7d532e-317d-46b9-b191-ca4fcf9285cd",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "folder"
+            },
+            "designerId": "a5e513be-610d-4a8c-ab08-bee60b132f0d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "children"
+            },
+            "designerId": "0868e881-af98-4c17-a849-7f25a94754a0"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "messages",
+                "designer|displayName": "hasManyMailMessage",
+                "model": "MailMessage",
+                "name": "messages"
+            },
+            "designerId": "8f700498-4357-4404-ae0a-8a300b79a3e2"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "children",
+                "designer|displayName": "hasManyMailFolder",
+                "model": "MailFolder",
+                "name": "children"
+            },
+            "designerId": "389ddac8-404b-4655-b557-3552bd85df48"
+        }
+    ]
+}

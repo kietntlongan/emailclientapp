@@ -1,0 +1,65 @@
+{
+    "name": "EmailPrototype",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.2.67",
+            "frameworkVersion": "4.2.1.883"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:8080/EmailPrototype",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "displayfield-ExtBox1-1369-inputEl": "Not Installed"
+    },
+    "xdsVersion": "3.0.2",
+    "xdsBuild": 1375,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000004,
+    "framework": "ext42",
+    "viewOrderMap": {
+        "view": [
+            "40d4340d-ddff-44f7-b17b-a5bf3d53383d",
+            "02e265a9-d67f-4f48-9058-4fd88567cfb8",
+            "c7134745-70e6-4d59-aa64-d552e037ee14",
+            "1f5c9d8f-9644-4cad-a813-0875506e3f77",
+            "7b3bcbb8-1475-4896-9f61-1a231da57256",
+            "a0410a24-726b-44e1-a15b-d9bdd1506df7"
+        ],
+        "store": [
+            "d6b51bdc-d953-4660-8b7a-af0980f0cc5b",
+            "b9816e28-de0b-4312-bbcd-2101d117ce33"
+        ],
+        "controller": [
+            "c65bc537-2034-4e57-af3c-fe7bf6d78381",
+            "f81d7876-30c2-4e45-ac9f-3a9c10a4b717",
+            "a900d0d7-b7ce-4e9b-bf34-158d034cba60",
+            "e0166966-9b93-41a6-8171-5f01ce492e44"
+        ],
+        "model": [
+            "e7a76412-4d92-4555-ac25-bf0dcccbf2b7",
+            "9b7d532e-317d-46b9-b191-ca4fcf9285cd",
+            "28c86163-aa7e-48e5-9bd1-e7b74e46c88c"
+        ],
+        "resource": [
+            "71159951-4985-4ef1-946b-1ebab5de087a",
+            "4e3882b9-23f0-4508-85f3-5e400a63c8b7"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
