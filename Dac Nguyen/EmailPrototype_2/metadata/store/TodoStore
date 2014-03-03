@@ -1,0 +1,39 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TodoStore",
+        "model": "Todo",
+        "storeId": "TodoStore"
+    },
+    "designerId": "98d0e0ba-882a-4ec3-8c45-b6b986c2e9b2",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/todo2.json"
+            },
+            "designerId": "7ae42371-fe22-4a29-9b00-af19f9f199cb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "6bf1a9e5-7463-45bc-91f4-a92473b4590c"
+                }
+            ]
+        }
+    ]
+}

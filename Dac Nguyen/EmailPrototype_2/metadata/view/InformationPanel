@@ -1,0 +1,115 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "informationpanel",
+        "designer|userClassName": "InformationPanel",
+        "itemId": null,
+        "layout": "accordion",
+        "title": "Information",
+        "width": 200
+    },
+    "designerId": "c7134745-70e6-4d59-aa64-d552e037ee14",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapseFirst": false,
+                "itemId": "properties",
+                "title": "Properties"
+            },
+            "designerId": "5fed5798-428c-4b35-8ed7-9c2ceb662034",
+            "cn": [
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "type": "maximize"
+                    },
+                    "designerId": "3aaa52cf-0261-4c43-a656-8b8c0117a3e9"
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "type": "gear"
+                    },
+                    "designerId": "27a68b10-c301-43fe-a1ca-9a3a0eb9f8ee"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "collapseFirst": false,
+                "html": "No related messages",
+                "itemId": "relates",
+                "title": "Related"
+            },
+            "configAlternates": {
+                "html": "string"
+            },
+            "designerId": "2ecad54d-067f-4cbc-82cd-27bb0b2139e1",
+            "cn": [
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "type": "maximize"
+                    },
+                    "designerId": "7c238219-6194-4295-9bac-998717798225"
+                },
+                {
+                    "type": "Ext.panel.Tool",
+                    "reference": {
+                        "name": "tools",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "type": "gear"
+                    },
+                    "designerId": "40606814-cb44-43da-a306-2322799a6e2a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Tool",
+            "reference": {
+                "name": "tools",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "type": "gear"
+            },
+            "designerId": "14cea98f-a852-4e36-afba-760b57a239c7"
+        }
+    ]
+}

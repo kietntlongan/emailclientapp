@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": true,
+        "defaultRootId": null,
+        "defaultRootProperty": null,
+        "designer|userClassName": "MailTreeStore",
+        "model": "MailFolder",
+        "nodeParam": "children",
+        "root": null,
+        "storeId": "MailTreeStore"
+    },
+    "designerId": "d6b51bdc-d953-4660-8b7a-af0980f0cc5b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "data/email2.json"
+            },
+            "designerId": "5a8474d3-4eb8-42f1-9449-fc89197940b2",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "33126b48-27b9-456a-91ef-afd491ece855"
+                }
+            ]
+        }
+    ]
+}

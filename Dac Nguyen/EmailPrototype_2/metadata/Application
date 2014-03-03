@@ -1,0 +1,42 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "controllers": [
+            "ViewportController",
+            "MailPanelController",
+            "MainPanelController",
+            "MailGridController",
+            "ToolbarController"
+        ],
+        "models": [
+            "MailFolder",
+            "MailMessage",
+            "User",
+            "Todo"
+        ],
+        "name": "EmailPrototype",
+        "stores": [
+            "MailTreeStore",
+            "MailStore",
+            "UserStore",
+            "TodoStore"
+        ],
+        "views": [
+            "MyViewport",
+            "MailPanel",
+            "ContentPanel",
+            "InformationPanel",
+            "MailGrid",
+            "TodoGrid",
+            "MainGridToolbar",
+            "NewMessageWindow",
+            "NewTodoWindow"
+        ]
+    },
+    "designerId": "application"
+}

@@ -1,0 +1,185 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "newtodowindow",
+        "designer|userClassName": "NewTodoWindow",
+        "height": 260,
+        "layout": "fit",
+        "title": "New Todo",
+        "width": 400
+    },
+    "designerId": "bb57006b-e872-49d0-91f3-102b830f312b",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "header": false,
+                "title": null
+            },
+            "designerId": "80235136-85e6-49b9-8fe6-ccf3e16b1e79",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Title",
+                        "layout|anchor": "100%"
+                    },
+                    "designerId": "b1f9fe6d-6ee1-4567-a698-f31f05ea3957"
+                },
+                {
+                    "type": "Ext.form.field.Checkbox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "boxLabel": "Complete",
+                        "fieldLabel": null,
+                        "layout|anchor": "100%"
+                    },
+                    "designerId": "1a2cf13c-57f0-436c-a0ae-e12eed3283a9"
+                },
+                {
+                    "type": "Ext.form.field.Date",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Due Date",
+                        "layout|anchor": "100%"
+                    },
+                    "designerId": "a5b920e1-919c-4a8b-b141-3ac787e56677"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Notes",
+                        "layout|anchor": "100%"
+                    },
+                    "designerId": "0ac4943c-5f15-4e49-bc44-cb68460ef33d"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom"
+                    },
+                    "designerId": "7317fb91-0cc0-4d57-a1a8-5796bed96e80",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "designerId": "45733894-23f2-4efd-a020-57ef3e0cb219"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "scale": "medium",
+                                "text": "Save"
+                            },
+                            "designerId": "e3301e6c-00af-40f6-8833-5b26c5bf5ed0",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "button.up('newtodowindow').close();"
+                                        ]
+                                    },
+                                    "designerId": "eae19ca2-efb7-49a6-8ca3-bdfcecdd058a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "scale": "medium",
+                                "text": "Cancel"
+                            },
+                            "designerId": "fc4405d6-a6b1-4885-bafa-c20a02d62fd3",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "button",
+                                            "e"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "button.up('newtodowindow').close();"
+                                        ]
+                                    },
+                                    "designerId": "ee54f09f-1bd4-4e8b-b072-0af9ad7a5432"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

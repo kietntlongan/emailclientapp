@@ -1,0 +1,126 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MailPanelController"
+    },
+    "designerId": "f81d7876-30c2-4e45-ac9f-3a9c10a4b717",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mailpanel #foldertree",
+                "designer|targetType": "Ext.tree.Panel",
+                "fn": "onTreepanelExpand",
+                "implHandler": [
+                    "//alert('TreePanelExpended');\r",
+                    "var mainpanel = p.up('panel#MainPanel');\r",
+                    "var containPanelCenter = mainpanel.down('container#contentpanelCenter');\r",
+                    "containPanelCenter.removeAll();\r",
+                    "containPanelCenter.add({xtype:'mailgrid'});\r",
+                    "\r",
+                    "var infoPanel = mainpanel.down('informationpanel');\r",
+                    "infoPanel.show();\r",
+                    "var propertyPanel = infoPanel.down('panel#properties');\r",
+                    "if(propertyPanel.items.length > 0) {\r",
+                    "    propertyPanel.removeAll();\r",
+                    "}\r",
+                    "propertyPanel.add({html: 'Please select 1 item only to view property'});\r",
+                    "\r",
+                    "var previewPanel = mainpanel.down('panel#previewpanel');\r",
+                    "previewPanel.show();\r",
+                    "var displayPreview = previewPanel.down('textareafield#displaypreview');\r",
+                    "displayPreview.setValue('Please select 1 item only to view property');\r",
+                    ""
+                ],
+                "name": "expand",
+                "scope": "me"
+            },
+            "designerId": "598bb35d-e1ed-4cc4-bb4c-82927684934c"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "mailpanel #todopanel",
+                "designer|targetType": "Ext.panel.Panel",
+                "fn": "onTodoPanelExpand",
+                "implHandler": [
+                    "//alert('TodoPanelExpended');\r",
+                    "var mainpanel = p.up('panel#MainPanel');\r",
+                    "var containPanelCenter = mainpanel.down('container#contentpanelCenter');\r",
+                    "containPanelCenter.removeAll();\r",
+                    "containPanelCenter.add({xtype:'todogrid'});\r",
+                    "\r",
+                    "var infoPanel = mainpanel.down('informationpanel');\r",
+                    "infoPanel.hide();\r",
+                    "\r",
+                    "var previewPanel = mainpanel.down('panel#previewpanel');\r",
+                    "previewPanel.hide();"
+                ],
+                "name": "expand",
+                "scope": "me"
+            },
+            "designerId": "28d45ad8-6985-46ec-b42e-29c5aab85aaf"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#foldertree",
+                "designer|targetType": "Ext.tree.Panel",
+                "fn": "onFoldertreeSelect",
+                "implHandler": [
+                    "var mainPanel = Ext.ComponentQuery.query('panel#MainPanel')[0];\r",
+                    "var mailGrid = mainPanel.down('mailgrid');\r",
+                    "//debugger;\r",
+                    "mailGrid.reconfigure(record.messages());\r",
+                    "\r",
+                    ""
+                ],
+                "name": "select",
+                "scope": "me"
+            },
+            "designerId": "2f19b69a-1b90-4e06-9a0a-676010d8e70f"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "#todopanel",
+                "designer|targetType": "Ext.selection.CheckboxModel",
+                "fn": "onTodoPanelSelect",
+                "implHandler": [
+                    "var todoGrid = Ext.ComponentQuery.query('todogrid')[0];\r",
+                    "//var mailGrid = mainPanel.down('mailgrid');\r",
+                    "//debugger;\r",
+                    "todoGrid.reconfigure(record.todos());"
+                ],
+                "name": "select",
+                "scope": "me"
+            },
+            "designerId": "1474b85d-473b-4d33-9075-23e4e722c210"
+        }
+    ]
+}

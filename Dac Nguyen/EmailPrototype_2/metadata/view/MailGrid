@@ -1,0 +1,85 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "columnLines": false,
+        "designer|userAlias": "mailgrid",
+        "designer|userClassName": "MailGrid",
+        "hideHeaders": true,
+        "itemId": null,
+        "store": null,
+        "title": "Mail Detail"
+    },
+    "designerId": "1f5c9d8f-9644-4cad-a813-0875506e3f77",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "designerId": "0fbf1d6b-518e-4f26-ae76-a65cbe7ca5a4",
+            "masterInstanceId": "f78e6599-3f34-4b79-8426-1eec960373fd"
+        },
+        {
+            "type": "Ext.grid.column.Template",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "flex": 1,
+                "text": "MyTemplateColumn"
+            },
+            "designerId": "540fa2e4-c7d2-4937-a613-5f40b531807e",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tpl",
+                        "implHandler": [
+                            "<tpl>\r",
+                            "    <div style=\"white-space:normal;word-wrap:break-word;\"><strong style=\"color:#000;\">From:</strong>{from} &nbsp; &nbsp; <strong style=\"color:#000;\">Received: </strong>{received}</div>\r",
+                            "<div style=\"white-space:normal;word-wrap:break-word;\"><strong style=\"color:#000;\">Subject:</strong> {subject}</div>\r",
+                            "    <div style=\"white-space:normal;word-wrap:break-word;\"><i>{message}</i></div>\r",
+                            "</tpl>"
+                        ]
+                    },
+                    "designerId": "6f7345aa-c49b-4ab8-be78-6bb7b9d34868"
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "designerId": "158de8d8-3fa7-4c09-8e5f-15c4c56761f2"
+        },
+        {
+            "type": "Ext.selection.CheckboxModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.CheckboxModel",
+            "designerId": "7f7df060-e8cf-4755-9475-434a27efe0b9"
+        }
+    ]
+}

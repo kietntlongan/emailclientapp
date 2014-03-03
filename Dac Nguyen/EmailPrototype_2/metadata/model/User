@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "User"
+    },
+    "designerId": "2c8e9893-d429-43cd-a6fa-fa050e194a06",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "owner"
+            },
+            "designerId": "5644b92e-408b-4db7-a7e4-e40fcf4e91a5"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associationKey": "todos",
+                "designer|displayName": "hasManyTodo",
+                "model": "Todo",
+                "name": "todos"
+            },
+            "designerId": "44a97510-d28e-4d9b-a2f8-e2f58faf4ac8"
+        }
+    ]
+}
