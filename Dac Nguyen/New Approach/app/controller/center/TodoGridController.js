@@ -1,4 +1,4 @@
-Ext.define('EmailPrototype.controller.TodoGridController', {
+Ext.define('EmailPrototype.controller.center.TodoGridController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
      getViewConfig:function(){

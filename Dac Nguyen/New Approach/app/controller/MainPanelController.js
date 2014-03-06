@@ -25,9 +25,9 @@ Ext.define('EmailPrototype.controller.MainPanelController', {
        init: function(application) {
           var me = this;
 
-        westItemController = me.createController('MailPanelController');
+        westItemController = me.createController('west.MailPanelController');
         eastItemController = me.createController('InfoPanelController');
-        centerItemController = me.createController('ContentPanelController');
+        centerItemController = me.createController('center.ContentPanelController');
    //     controller = me.createController('TodoListPanelController');
     	},
 

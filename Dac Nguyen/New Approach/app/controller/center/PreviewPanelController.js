@@ -1,4 +1,4 @@
-Ext.define('EmailPrototype.controller.PreviewPanelController', {
+Ext.define('EmailPrototype.controller.center.PreviewPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     getViewConfig:function(){

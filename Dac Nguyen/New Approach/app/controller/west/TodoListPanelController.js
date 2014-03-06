@@ -1,4 +1,4 @@
-Ext.define('EmailPrototype.controller.MailTreePanelController', {
+Ext.define('EmailPrototype.controller.west.TodoListPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     init: function(application) {
@@ -8,21 +8,17 @@ Ext.define('EmailPrototype.controller.MailTreePanelController', {
         //         click: this.onNewButtonClick
         //     }
         // });
-   
     },
 
      getViewConfig:function(){
         var me = this;
-        var viewId = me.getViewId('mailtreepanel');
+        var viewId = me.getViewId('todolistpanel');
         cfg = {
-            xtype: 'mailtreepanel',
+            xtype: 'todolistpanel',
             itemId: viewId,
-            collapseFirst: false
         }
         return cfg;
     },
-
-    
 
 
 

@@ -49,17 +49,7 @@ Ext.application({
         'center.PreviewPanel',
         'ContentPanel'
     ],
-    controllers: [
-        'ViewportController',
-        'MailPanelController',
-        'MainPanelController',
-        'MailGridController',
-        'ToolbarController',
-        'MailTreePanelController',
-        'TodoListPanelController',
-        'Main'
 
-    ],
     name: 'EmailPrototype',
    // appFolder: '' //customize application folder.
    // uses: ['app.controller.xxx'], // specify the jS class that will use and must be loaded along with.

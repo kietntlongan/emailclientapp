@@ -1,4 +1,4 @@
-Ext.define('EmailPrototype.controller.ContentPanelController', {
+Ext.define('EmailPrototype.controller.center.ContentPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     config:{
@@ -10,9 +10,30 @@ Ext.define('EmailPrototype.controller.ContentPanelController', {
           var me = this,
         controller;
 
-        previewController = me.createController('PreviewPanelController');
-        mailGridController = me.createController('MailGridController');
+        previewController = me.createController('center.PreviewPanelController');
+        mailGridController = me.createController('center.MailGridController');
+
+         this.control({
+            "#NewButton": {
+                click: this.onNewButtonClick
+            }
+        });
     },
+
+    
+     onNewButtonClick: function(button, e, eOpts) {
+        var contentPanel = button.up('#contentpanelCenter');
+        //debugger;
+        if(contentPanel.getComponent(0).getXType() === 'mailgrid') {
+           // console.log('mailgrid');
+            Ext.create('EmailPrototype.view.NewMessageWindow');
+        } else {
+          //  console.log('todogrid');
+            Ext.create('EmailPrototype.view.NewTodoWindow');
+        }
+
+    },
+
 
     getViewItems: function(){
     var me = this,

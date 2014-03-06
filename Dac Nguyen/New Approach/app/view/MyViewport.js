@@ -16,18 +16,6 @@
 Ext.define('EmailPrototype.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
-    requires: [
-        'EmailPrototype.view.MailPanel',
-        'EmailPrototype.view.InformationPanel',
-        'EmailPrototype.view.ContentPanel',
-        'Ext.toolbar.Toolbar',
-        'Ext.form.field.Text',
-        'Ext.toolbar.Spacer',
-        'Ext.form.Label',
-        'Ext.button.Split',
-        'Ext.menu.Menu',
-        'Ext.menu.Item'
-    ],
 
     layout: 'anchor',
 

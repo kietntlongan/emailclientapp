@@ -18,9 +18,9 @@ Ext.define('EmailPrototype.controller.ToolbarController', {
 
     init: function(application) {
         var me = this;
-        this.control({
-            "#NewButton": {
-                click: this.onNewButtonClick
+            this.control({
+            "#btnSearch": {
+                click: this.onBtnSearchClick
             }
         });
     },
@@ -35,19 +35,71 @@ Ext.define('EmailPrototype.controller.ToolbarController', {
         return cfg;
     },
 
-    onNewButtonClick: function(button, e, eOpts) {
-        var contentPanel = button.up('#contentpanelCenter');
+   onBtnSearchClick: function(button, e, eOpts) {
+        var seatchText = button.up('toolbar').down('#searchTextField').getValue();
+        console.log('Search Text: ' + seatchText);
+        var contentPanel = Ext.ComponentQuery.query('#contentpanelCenter')[0];
+        var containPanelGrid = contentPanel.getComponent(0);
+        var me = this;
         //debugger;
-        if(contentPanel.getComponent(0).getXType() === 'mailgrid') {
-           // console.log('mailgrid');
-            Ext.create('EmailPrototype.view.NewMessageWindow');
-        } else {
-          //  console.log('todogrid');
-            Ext.create('EmailPrototype.view.NewTodoWindow');
-        }
+        var arrayMessageResult = new Array();
+        if(containPanelGrid.getXType() === 'mailgrid') {
+         //   console.log('mailgrid');
+            var treeStore = Ext.getStore('MailTreeStore');
 
+            treeStore.getRootNode().eachChild(function(currentNode){
+          //      debugger;
+               arrayMessageResult =  arrayMessageResult.concat(me.searchInMailStore(currentNode,seatchText));
+                currentNode.children().each(function(fol) {
+                     arrayMessageResult =  arrayMessageResult.concat(me.searchInMailStore(fol,seatchText));
+                });
+            });
+            var searchStore = Ext.getStore('MailStore');
+            searchStore.loadData(arrayMessageResult, false);
+            containPanelGrid.reconfigure(searchStore);
+           // debugger;
+
+        } else {
+            //console.log('todogrid'); record.todos()
+            var userStore = Ext.getStore('UserStore');
+            userStore.each(function(record) {
+                 arrayMessageResult =  arrayMessageResult.concat(me.searchInTodoStore(record,seatchText));
+            });
+            var searchStore = Ext.getStore('TodoStore');
+            searchStore.loadData(arrayMessageResult, false);
+            containPanelGrid.reconfigure(searchStore);
+        }
     },
 
+    searchInMailStore: function(mailStore, keyword) {
+        var arrayMessage = new Array();
+        //debugger;
+
+        mailStore.messages().each(function(mess) {
+        //    debugger;
+            var searchIndex = mess.get('message').search(keyword);
+            if(searchIndex != -1) {
+                arrayMessage.push(mess);
+            }
+
+        });
+        return arrayMessage;
+    },
+
+    searchInTodoStore: function(todoStore, keyword) {
+        var arrayTodos = new Array();
+        //debugger;
+
+        todoStore.todos().each(function(todo) {
+        //    debugger;
+            var searchIndex = todo.get('notes').search(keyword);
+            if(searchIndex != -1) {
+                arrayTodos.push(todo);
+            }
+
+        });
+        return arrayTodos;
+    },
     
 
 });

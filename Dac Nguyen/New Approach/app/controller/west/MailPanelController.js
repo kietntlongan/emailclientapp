@@ -13,19 +13,15 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('EmailPrototype.controller.MailPanelController', {
+Ext.define('EmailPrototype.controller.west.MailPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
-    config:{
-        mailtreePanel: null,
-        todoPanel: null,
-    },
 
     init: function(application) {
-          var me = this;
+          var me = this, controller;
 
-        mailtreePanel = me.createController('MailTreePanelController');
-        todoPanel = me.createController('TodoListPanelController');
+        controller = me.createController('west.MailTreePanelController');
+        controller = me.createController('west.TodoListPanelController');
 
        // var mailtreeViewId = 'mailtreepanel#' + mailtreePanel.getViewId('mailtreepanel');
         //debugger;
@@ -77,7 +73,7 @@ Ext.define('EmailPrototype.controller.MailPanelController', {
     },
     
     onTreepanelExpand: function(p, eOpts) {
-        alert('TreePanelExpended');
+        console.log('TreePanelExpended');
          var mainpanel = Ext.ComponentQuery.query('mainpanel')[0];
          var containPanelCenter = mainpanel.down('container#contentpanelCenter');
         containPanelCenter.removeAll();
@@ -99,7 +95,7 @@ Ext.define('EmailPrototype.controller.MailPanelController', {
     },
 
     onTodoPanelExpand: function(p, eOpts) {
-    //    console.log('TodoPanelExpended');
+        console.log('TodoPanelExpended');
         var mainpanel = Ext.ComponentQuery.query('mainpanel')[0];
         var containPanelCenter = mainpanel.down('container#contentpanelCenter');
         containPanelCenter.removeAll();
@@ -113,7 +109,7 @@ Ext.define('EmailPrototype.controller.MailPanelController', {
     },
 
     onFoldertreeSelect: function(rowmodel, record, index, eOpts) {
-   //     console.log('foldertree select');
+        console.log('foldertree select');
         var mailGrid = Ext.ComponentQuery.query('mailgrid')[0];
         //debugger;
         mailGrid.reconfigure(record.messages());
@@ -122,7 +118,7 @@ Ext.define('EmailPrototype.controller.MailPanelController', {
     },
 
     onTodoPanelSelect: function(rowmodel, record, index, eOpts) {
-    //    console.log('onTodoPanelSelect');
+        console.log('onTodoPanelSelect');
         var todoGrid = Ext.ComponentQuery.query('todogrid')[0];
         //var mailGrid = mainPanel.down('mailgrid');
         //debugger;

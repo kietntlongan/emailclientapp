@@ -1,6 +1,7 @@
 Ext.define('EmailPrototype.controller.Main', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+
      init: function(application){
     var me = this,
         controller;

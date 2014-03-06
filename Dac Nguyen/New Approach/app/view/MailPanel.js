@@ -17,14 +17,6 @@ Ext.define('EmailPrototype.view.MailPanel', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.mailpanel',
 
-    // requires: [
-    //     'Ext.tree.Panel',
-    //     'Ext.tree.View',
-    //     'Ext.grid.Panel',
-    //     'Ext.grid.View',
-    //     'Ext.grid.column.Column',
-    //     'Ext.selection.RowModel'
-    // ],
 
     width: 200,
     layout: 'accordion',
