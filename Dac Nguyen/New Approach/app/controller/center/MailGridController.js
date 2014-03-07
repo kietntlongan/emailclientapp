@@ -15,6 +15,10 @@
 
 Ext.define('EmailPrototype.controller.center.MailGridController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
+    
+    models: [],
+    views: [ 'center.MailGrid'],
+    requires: [],
 
     config:{
         itemToDisplay: null
@@ -60,7 +64,7 @@ Ext.define('EmailPrototype.controller.center.MailGridController', {
       //  debugger; // MAILLLLL >> 2 objs. OK
         cfg = {
             xtype: 'mailgrid',
-            itemId: viewId,
+            itemId: viewId
         }
         return cfg;
     },
@@ -96,7 +100,7 @@ Ext.define('EmailPrototype.controller.center.MailGridController', {
             value: value} ;
         return cfg;
 
-    },
+    }
 
 
     

@@ -1,6 +1,10 @@
 Ext.define('EmailPrototype.controller.center.PreviewPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+	models: [],
+    views: [ 'center.PreviewPanel',],
+    requires: [],
+
     getViewConfig:function(){
 	        var me = this, cfg;
 
@@ -8,10 +12,10 @@ Ext.define('EmailPrototype.controller.center.PreviewPanelController', {
 
 	        cfg = {
 	            xtype: 'previewpanel',
-	            itemId: viewId, 
-	        }
+	            itemId: viewId
+	        };
 	        
 	        return cfg;
-    	},
+    	}
     
 });

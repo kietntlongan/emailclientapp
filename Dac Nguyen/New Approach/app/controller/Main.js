@@ -1,6 +1,9 @@
 Ext.define('EmailPrototype.controller.Main', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+    requires:[
+     'Ext.layout.container.Card'
+    ],
 
      init: function(application){
     var me = this,
@@ -48,6 +51,6 @@ Ext.define('EmailPrototype.controller.Main', {
             items: containedItems
         }
         return cfg;
-    },
+    }
 
 });

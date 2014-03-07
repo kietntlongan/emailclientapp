@@ -4,7 +4,7 @@ Ext.define('EmailPrototype.controller.AbstractFdController', {
 //Define config to use 2 variables.
   config: {
   	dynamicControllers: null,
- 	 viewIds: null,
+ 	 viewIds: null
   },
 
 //Create controller base on app.createController. Then add to dynamicControllers

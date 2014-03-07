@@ -16,6 +16,18 @@
 Ext.define('EmailPrototype.controller.west.MailPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+   
+    
+    views: [
+    'west.MailTreePanel',
+    'west.TodoListPanel',
+    'center.MailGrid',
+    'center.TodoGrid',
+    'InformationPanel',
+     'center.PreviewPanel',
+     'MailPanel'
+    ],
+   
 
     init: function(application) {
           var me = this, controller;
@@ -123,7 +135,7 @@ Ext.define('EmailPrototype.controller.west.MailPanelController', {
         //var mailGrid = mainPanel.down('mailgrid');
         //debugger;
         todoGrid.reconfigure(record.todos());
-    },
+    }
 
     
 

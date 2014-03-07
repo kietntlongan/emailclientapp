@@ -2,6 +2,15 @@ Ext.define('EmailPrototype.view.TopToolbar', {
     extend: 'Ext.toolbar.Toolbar',
     alias: 'widget.toptoolbar',
 
+    requires:[
+        'Ext.form.field.Text',
+        'Ext.toolbar.Spacer',
+        'Ext.form.Label',
+        'Ext.button.Split',
+        'Ext.menu.Menu',
+        'Ext.menu.Item'
+    ],
+
    	anchor: '100%',
     height: 46,
     items: [

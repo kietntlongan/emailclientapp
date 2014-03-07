@@ -16,6 +16,15 @@
 Ext.define('EmailPrototype.controller.ToolbarController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+    models: [],
+    views: [
+    'TopToolbar',
+    'center.MailGrid',
+    'center.TodoGrid'
+    ],
+    requires: [],
+
+
     init: function(application) {
         var me = this;
             this.control({
@@ -99,7 +108,7 @@ Ext.define('EmailPrototype.controller.ToolbarController', {
 
         });
         return arrayTodos;
-    },
+    }
     
 
 });

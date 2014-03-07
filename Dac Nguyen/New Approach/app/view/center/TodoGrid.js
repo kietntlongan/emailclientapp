@@ -17,7 +17,13 @@ Ext.define('EmailPrototype.view.center.TodoGrid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.todogrid',
 
-
+    requires: [
+    'EmailPrototype.view.MainGridToolbar',
+    'Ext.toolbar.Toolbar',
+    'Ext.grid.column.Boolean',
+    'Ext.grid.View'
+    ],
+    
     title: 'Todo List',
     forceFit: true,
 

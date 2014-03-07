@@ -20,39 +20,11 @@ Ext.Loader.setConfig({
 
 
 Ext.application({
-    models: [
-        'MailFolder',
-        'MailMessage',
-        'User',
-        'Todo'
-    ],
-    stores: [
-        'MailTreeStore',
-        'MailStore',
-        'UserStore',
-        'TodoStore'
-    ],
-    views: [
-        'MyViewport',
-        'MailPanel',
-        'ContentPanel',
-        'InformationPanel',
-        'center.MailGrid',
-        'center.TodoGrid',
-        'MainGridToolbar',
-        'NewMessageWindow',
-        'NewTodoWindow',
-        'TopToolbar',
-        'west.MailTreePanel',
-        'west.TodoListPanel',
-        'MainPanel',
-        'center.PreviewPanel',
-        'ContentPanel'
-    ],
+   
+   requires:['EmailPrototype.view.MyViewport'],
 
     name: 'EmailPrototype',
-   // appFolder: '' //customize application folder.
-   // uses: ['app.controller.xxx'], // specify the jS class that will use and must be loaded along with.
+
     launch: function() {
         var me = this, toolbarController, toolbarViewConfig, mainController, mainViewConfig;
 
@@ -62,8 +34,6 @@ Ext.application({
         mainController = me.createController('Main',{});
         mainViewConfig = mainController.getViewConfig();
     //    debugger;
-
-        // toolbarViewConfig = Ext.apply(containerViewConfig, {flex: 1}); // apply more config to the Viewconfig.
 
         viewportConfig =  {
           items: [

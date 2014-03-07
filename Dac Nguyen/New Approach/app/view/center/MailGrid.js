@@ -17,6 +17,15 @@ Ext.define('EmailPrototype.view.center.MailGrid', {
     extend: 'Ext.grid.Panel',
     alias: 'widget.mailgrid',
 
+    requires: [
+    'EmailPrototype.view.MainGridToolbar',
+    'Ext.toolbar.Toolbar',
+    'Ext.grid.column.Template',
+    'Ext.XTemplate',
+    'Ext.grid.View',
+    'Ext.selection.CheckboxModel'
+        ],
+    
     title: 'Mail Detail',
     columnLines: false,
     hideHeaders: true,

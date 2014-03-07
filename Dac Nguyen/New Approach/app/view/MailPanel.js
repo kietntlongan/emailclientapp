@@ -17,6 +17,9 @@ Ext.define('EmailPrototype.view.MailPanel', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.mailpanel',
 
+    requires: [
+        'Ext.layout.container.Accordion'
+    ],
 
     width: 200,
     layout: 'accordion',

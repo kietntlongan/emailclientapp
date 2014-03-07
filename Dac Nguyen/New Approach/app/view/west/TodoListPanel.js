@@ -1,6 +1,14 @@
 Ext.define('EmailPrototype.view.west.TodoListPanel', {
 		extend: 'Ext.grid.Panel',
 		alias: 'widget.todolistpanel',
+       
+       requires: [
+        'Ext.grid.View',
+        'Ext.grid.column.Column',
+        'Ext.selection.RowModel'
+         ],
+
+     
 
 		autoScroll: true,
         title: 'To Dos',

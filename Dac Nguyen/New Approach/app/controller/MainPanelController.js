@@ -15,6 +15,10 @@
 
 Ext.define('EmailPrototype.controller.MainPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
+ 
+    models: [],
+    views: ['MainPanel'],
+    requires: [],
 
         config:{
           westItemController: null,
@@ -28,7 +32,6 @@ Ext.define('EmailPrototype.controller.MainPanelController', {
         westItemController = me.createController('west.MailPanelController');
         eastItemController = me.createController('InfoPanelController');
         centerItemController = me.createController('center.ContentPanelController');
-   //     controller = me.createController('TodoListPanelController');
     	},
 
     	getViewItems: function(){
@@ -65,6 +68,6 @@ Ext.define('EmailPrototype.controller.MainPanelController', {
 
      //     debugger;
 	        return cfg;
-    	},
+    	}
 
 });

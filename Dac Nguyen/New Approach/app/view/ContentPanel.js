@@ -17,15 +17,10 @@ Ext.define('EmailPrototype.view.ContentPanel', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.contentpanel',
 
-    requires: [
-        'Ext.grid.Panel',
-        'Ext.form.field.TextArea'
-    ],
-
     height: 250,
     width: 400,
     layout: 'border',
-    header: false,
-    title: '',
+    header: false
+  //  title: ''
 
 });

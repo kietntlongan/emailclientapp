@@ -1,15 +1,13 @@
 Ext.define('EmailPrototype.controller.west.MailTreePanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
+    
+    models: [ 
+    'MailFolder',
+     'MailMessage'
+            ],
+    stores: [ 'MailTreeStore',],
 
-    init: function(application) {
-        var me = this;
-        // this.control({
-        //     "#NewButton": {
-        //         click: this.onNewButtonClick
-        //     }
-        // });
-   
-    },
+    views: ['west.MailTreePanel',],
 
      getViewConfig:function(){
         var me = this;
@@ -20,7 +18,7 @@ Ext.define('EmailPrototype.controller.west.MailTreePanelController', {
             collapseFirst: false
         }
         return cfg;
-    },
+    }
 
     
 

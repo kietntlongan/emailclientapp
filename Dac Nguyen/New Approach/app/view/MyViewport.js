@@ -17,7 +17,7 @@ Ext.define('EmailPrototype.view.MyViewport', {
     extend: 'Ext.container.Viewport',
 
 
-    layout: 'anchor',
+    layout: 'anchor'
 
    
 

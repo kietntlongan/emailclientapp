@@ -1,6 +1,10 @@
 Ext.define('EmailPrototype.controller.center.TodoGridController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+    models: [],
+    views: ['center.TodoGrid',],
+    requires: [],
+
      getViewConfig:function(){
         var me = this, containedItems, cfg;
 
@@ -8,9 +12,9 @@ Ext.define('EmailPrototype.controller.center.TodoGridController', {
 
         cfg = {
             xtype: 'todogrid',
-            itemId: viewId,
-        }
+            itemId: viewId
+        };
         return cfg;
-    },
+    }
 
 });

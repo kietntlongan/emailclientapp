@@ -1,6 +1,17 @@
 Ext.define('EmailPrototype.controller.center.ContentPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
+    models: [],
+    views: [ 
+    'center.MailGrid',
+    'center.TodoGrid',
+    'ContentPanel',
+    'center.PreviewPanel',
+    'NewMessageWindow',
+    'NewTodoWindow'
+    ],
+    requires: [],
+
     config:{
           mailGridController: null,
           previewController: null
@@ -73,6 +84,6 @@ Ext.define('EmailPrototype.controller.center.ContentPanelController', {
         }
      //   debugger;
         return cfg;
-    },
+    }
 
 });
