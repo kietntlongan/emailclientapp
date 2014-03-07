@@ -2,7 +2,7 @@ Ext.define('EmailPrototype.controller.InfoPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
 	models: [],
-    views: ['InformationPanel',],
+    views: ['InformationPanel'],
     requires: [],
     
 	getViewConfig:function(){
@@ -12,7 +12,7 @@ Ext.define('EmailPrototype.controller.InfoPanelController', {
 
         cfg = {
             xtype: 'informationpanel',
-            itemId: viewId,
+            itemId: viewId
         }
         
         return cfg;

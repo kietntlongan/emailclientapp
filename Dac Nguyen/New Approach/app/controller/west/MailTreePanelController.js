@@ -5,9 +5,9 @@ Ext.define('EmailPrototype.controller.west.MailTreePanelController', {
     'MailFolder',
      'MailMessage'
             ],
-    stores: [ 'MailTreeStore',],
+    stores: [ 'MailTreeStore'],
 
-    views: ['west.MailTreePanel',],
+    views: ['west.MailTreePanel'],
 
      getViewConfig:function(){
         var me = this;

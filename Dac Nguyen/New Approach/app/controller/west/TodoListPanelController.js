@@ -5,9 +5,9 @@ Ext.define('EmailPrototype.controller.west.TodoListPanelController', {
          'User',
         'Todo'
           ],
-    views: ['west.TodoListPanel',],
+    views: ['west.TodoListPanel'],
     
-    stores: [ 'UserStore',],      
+    stores: [ 'UserStore'],      
 
     
     init: function(application) {

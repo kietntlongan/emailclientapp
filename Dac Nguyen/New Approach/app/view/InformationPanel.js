@@ -20,7 +20,7 @@ Ext.define('EmailPrototype.view.InformationPanel', {
     requires: [
         'Ext.panel.Panel',
         'Ext.panel.Tool',
-        'Ext.layout.container.Accordion',
+        'Ext.layout.container.Accordion'
     ],
 
     width: 200,

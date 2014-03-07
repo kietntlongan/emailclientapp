@@ -2,7 +2,7 @@ Ext.define('EmailPrototype.controller.center.PreviewPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
 	models: [],
-    views: [ 'center.PreviewPanel',],
+    views: [ 'center.PreviewPanel'],
     requires: [],
 
     getViewConfig:function(){
