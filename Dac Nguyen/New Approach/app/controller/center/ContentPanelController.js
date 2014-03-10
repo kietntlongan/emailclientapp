@@ -3,9 +3,9 @@ Ext.define('EmailPrototype.controller.center.ContentPanelController', {
 
     models: [],
     views: [ 
-    'center.MailGrid',
-    'center.TodoGrid',
-    'ContentPanel',
+    'center.MailGridPanel',
+    'center.TodoGridPanel',
+    'center.ContentPanel',
     'center.PreviewPanel',
     'NewMessageWindow',
     'NewTodoWindow'
@@ -22,7 +22,7 @@ Ext.define('EmailPrototype.controller.center.ContentPanelController', {
         controller;
 
         previewController = me.createController('center.PreviewPanelController');
-        mailGridController = me.createController('center.MailGridController');
+        mailGridController = me.createController('center.MailGridPanelController');
 
          this.control({
             "#NewButton": {
@@ -35,7 +35,7 @@ Ext.define('EmailPrototype.controller.center.ContentPanelController', {
      onNewButtonClick: function(button, e, eOpts) {
         var contentPanel = button.up('#contentpanelCenter');
         //debugger;
-        if(contentPanel.getComponent(0).getXType() === 'mailgrid') {
+        if(contentPanel.getComponent(0).getXType() === 'mailgridpanel') {
            // console.log('mailgrid');
             Ext.create('EmailPrototype.view.NewMessageWindow');
         } else {
@@ -59,7 +59,7 @@ Ext.define('EmailPrototype.controller.center.ContentPanelController', {
 
     var containGridCfg = {
 	    xtype: 'container',
-        margins: '0 0 10 0',
+        margins: '0 0 5 5',
         region: 'center',
         itemId: 'contentpanelCenter',
         layout: 'fit',

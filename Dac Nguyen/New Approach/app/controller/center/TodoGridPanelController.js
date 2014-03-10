@@ -1,17 +1,17 @@
-Ext.define('EmailPrototype.controller.center.TodoGridController', {
+Ext.define('EmailPrototype.controller.center.TodoGridPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     models: [],
-    views: ['center.TodoGrid'],
+    views: ['center.TodoGridPanel'],
     requires: [],
 
      getViewConfig:function(){
         var me = this, containedItems, cfg;
 
-        var viewId = me.getViewId('todogrid');
+        var viewId = me.getViewId('todogridpanel');
 
         cfg = {
-            xtype: 'todogrid',
+            xtype: 'todogridpanel',
             itemId: viewId
         };
         return cfg;

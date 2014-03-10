@@ -5,7 +5,7 @@ Ext.define('EmailPrototype.view.MainPanel', {
     'Ext.layout.container.Border'
     ],
     defaults: {
-        margin: '5 5 5 5'
+        margin: '0 5 0 5'
     },
     layout: 'border',
     header: false

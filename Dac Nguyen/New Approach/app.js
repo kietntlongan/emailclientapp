@@ -28,7 +28,7 @@ Ext.application({
     launch: function() {
         var me = this, toolbarController, toolbarViewConfig, mainController, mainViewConfig;
 
-        toolbarController = me.createController('ToolbarController',{});
+        toolbarController = me.createController('TopToolbarPanelController',{});
         toolbarViewConfig = toolbarController.getViewConfig();
      //   debugger;
         mainController = me.createController('Main',{});

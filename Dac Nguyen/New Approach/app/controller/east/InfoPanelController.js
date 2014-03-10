@@ -1,8 +1,8 @@
-Ext.define('EmailPrototype.controller.InfoPanelController', {
+Ext.define('EmailPrototype.controller.east.InfoPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
 	models: [],
-    views: ['InformationPanel'],
+    views: ['east.InformationPanel'],
     requires: [],
     
 	getViewConfig:function(){

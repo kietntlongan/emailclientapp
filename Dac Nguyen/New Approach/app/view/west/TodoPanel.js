@@ -1,6 +1,6 @@
-Ext.define('EmailPrototype.view.west.TodoListPanel', {
+Ext.define('EmailPrototype.view.west.TodoPanel', {
 		extend: 'Ext.grid.Panel',
-		alias: 'widget.todolistpanel',
+		alias: 'widget.todopanel',
        
        requires: [
         'Ext.grid.View',

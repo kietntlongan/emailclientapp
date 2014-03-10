@@ -13,9 +13,9 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('EmailPrototype.view.center.MailGrid', {
+Ext.define('EmailPrototype.view.center.MailGridPanel', {
     extend: 'Ext.grid.Panel',
-    alias: 'widget.mailgrid',
+    alias: 'widget.mailgridpanel',
 
     requires: [
     'EmailPrototype.view.MainGridToolbar',

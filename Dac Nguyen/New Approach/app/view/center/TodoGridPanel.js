@@ -13,9 +13,9 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('EmailPrototype.view.center.TodoGrid', {
+Ext.define('EmailPrototype.view.center.TodoGridPanel', {
     extend: 'Ext.grid.Panel',
-    alias: 'widget.todogrid',
+    alias: 'widget.todogridpanel',
 
     requires: [
     'EmailPrototype.view.MainGridToolbar',

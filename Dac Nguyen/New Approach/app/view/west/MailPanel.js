@@ -1,6 +1,6 @@
-Ext.define('EmailPrototype.view.west.MailTreePanel', {
+Ext.define('EmailPrototype.view.west.MailPanel', {
 		extend: 'Ext.tree.Panel',
-		alias: 'widget.mailtreepanel',
+		alias: 'widget.mailpanel',
 
 	
 

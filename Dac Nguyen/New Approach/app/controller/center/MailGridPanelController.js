@@ -13,11 +13,11 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('EmailPrototype.controller.center.MailGridController', {
+Ext.define('EmailPrototype.controller.center.MailGridPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
     
     models: [],
-    views: [ 'center.MailGrid'],
+    views: [ 'center.MailGridPanel'],
     requires: [],
 
     config:{
@@ -49,7 +49,7 @@ Ext.define('EmailPrototype.controller.center.MailGridController', {
 
     init: function(application) {
             this.control({
-                "mailgrid": {
+                "mailgridpanel": {
                     deselect: this.onCheckboxModelDeselect,
                     select: this.onCheckboxModelSelect
                 }
@@ -59,11 +59,11 @@ Ext.define('EmailPrototype.controller.center.MailGridController', {
     getViewConfig:function(){
         var me = this, containedItems, cfg;
 
-        var viewId = me.getViewId('mailgrid');
+        var viewId = me.getViewId('mailgridpanel');
 
       //  debugger; // MAILLLLL >> 2 objs. OK
         cfg = {
-            xtype: 'mailgrid',
+            xtype: 'mailgridpanel',
             itemId: viewId
         }
         return cfg;

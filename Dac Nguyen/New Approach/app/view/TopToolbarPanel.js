@@ -1,6 +1,6 @@
-Ext.define('EmailPrototype.view.TopToolbar', {
+Ext.define('EmailPrototype.view.TopToolbarPanel', {
     extend: 'Ext.toolbar.Toolbar',
-    alias: 'widget.toptoolbar',
+    alias: 'widget.toptoolbarpanel',
 
     requires:[
         'Ext.form.field.Text',

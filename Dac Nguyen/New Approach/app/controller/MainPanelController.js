@@ -21,7 +21,7 @@ Ext.define('EmailPrototype.controller.MainPanelController', {
     requires: [],
 
         config:{
-          westItemController: null,
+  //        navigationPanelController: null,
           eastItemController: null,
           centerItemController: null
         },
@@ -29,20 +29,21 @@ Ext.define('EmailPrototype.controller.MainPanelController', {
        init: function(application) {
           var me = this;
 
-        westItemController = me.createController('west.MailPanelController');
-        eastItemController = me.createController('InfoPanelController');
+ //       navigationPanelController = me.createController('west.NavigationPanelController');
+        eastItemController = me.createController('east.InfoPanelController');
         centerItemController = me.createController('center.ContentPanelController');
     	},
 
     	getViewItems: function(){
-    		var me = this, westItem, eastItem, contentItem,items = new Array();
+    		var me = this, eastItem, contentItem,items = new Array();
+        // var westItem;
       //  debugger; //MAINNNN 
-    		westItem = westItemController.getViewConfig();
-	     westItem = Ext.apply(westItem, {collapsible: true,region: 'west'});
-	     items.push(westItem);
+    		// westItem = navigationPanelController.getViewConfig();
+	     // westItem = Ext.apply(westItem, {collapsible: true,region: 'west'});
+	     // items.push(westItem);
 
         eastItem = eastItemController.getViewConfig();
-        eastItem = Ext.apply(eastItem, {collapseFirst: false, collapsible: true,region: 'east'});
+        eastItem = Ext.apply(eastItem, {collapsible: true,region: 'east'});
         items.push(eastItem);
 
         contentItem = centerItemController.getViewConfig();

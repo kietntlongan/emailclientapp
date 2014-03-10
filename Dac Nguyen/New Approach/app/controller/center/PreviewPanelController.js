@@ -12,6 +12,7 @@ Ext.define('EmailPrototype.controller.center.PreviewPanelController', {
 
 	        cfg = {
 	            xtype: 'previewpanel',
+	            margins: '0 0 0 5',
 	            itemId: viewId
 	        };
 	        

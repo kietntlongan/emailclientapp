@@ -1,11 +1,11 @@
-Ext.define('EmailPrototype.controller.west.TodoListPanelController', {
+Ext.define('EmailPrototype.controller.west.TodoPanelController', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     models: [
          'User',
         'Todo'
           ],
-    views: ['west.TodoListPanel'],
+    views: ['west.TodoPanel'],
     
     stores: [ 'UserStore'],      
 
@@ -17,9 +17,9 @@ Ext.define('EmailPrototype.controller.west.TodoListPanelController', {
 
      getViewConfig:function(){
         var me = this;
-        var viewId = me.getViewId('todolistpanel');
+        var viewId = me.getViewId('todopanel');
         cfg = {
-            xtype: 'todolistpanel',
+            xtype: 'todopanel',
             itemId: viewId
         }
         return cfg;

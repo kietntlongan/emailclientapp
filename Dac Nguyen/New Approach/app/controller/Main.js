@@ -2,34 +2,36 @@ Ext.define('EmailPrototype.controller.Main', {
     extend: 'EmailPrototype.controller.AbstractFdController',
 
     requires:[
-     'Ext.layout.container.Card'
+     'Ext.layout.container.HBox'
     ],
 
-     init: function(application){
-    var me = this,
-        controller;
+   config:{
+    //        navigationPanelController: null,
+          navigationController: null,
+          mainPanelController: null
+    },
+
+    init: function(application){
+    var me = this;
         
     // Create 1 instances of the MainPanelController controller. 
     // Ids of controllers are saved in me.dynamicControllers
-    controller = me.createController('MainPanelController');
+    mainPanelController = me.createController('MainPanelController');
+    navigationController = me.createController('west.NavigationPanelController');
   },
 
   getViewItems: function(){
-    var me = this,
-        controllerId, controller, nestedView,
-        i = 0,
+    var me = this, navView, mainView,
         items = new Array();
     
-    for (; i < me.dynamicControllers.length; i++){
-      controllerId = me.dynamicControllers[i];
-      controller = me.getController(controllerId);
-      nestedView = controller.getViewConfig();
-      if (nestedView){
-        nestedView = Ext.apply(nestedView, {});
-        items.push(nestedView);
-      }
-    }
-    
+        navView = navigationController.getViewConfig();
+        navView = Ext.apply(navView, {collapsible: true, collapseDirection: 'left'});
+        items.push(navView);
+
+        mainView = mainPanelController.getViewConfig();
+        mainView = Ext.apply(mainView, {flex: 1});
+        items.push(mainView);
+
     return items;
   },
 
@@ -45,8 +47,8 @@ Ext.define('EmailPrototype.controller.Main', {
             itemId: viewId,
             header: false,
             layout: {
-                type: 'card',
-                deferredRender: false
+                type: 'hbox',
+                align: 'stretch'
             },
             items: containedItems
         }
