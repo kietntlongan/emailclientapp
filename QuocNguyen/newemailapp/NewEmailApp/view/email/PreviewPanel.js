@@ -6,5 +6,7 @@ Ext.define("NewEmailApp.view.email.PreviewPanel", {
 	config: {
 		email: null
 	},
+	split: true,
+	height: 400,
 	tpl: ['<div>{message}</div>']
 });

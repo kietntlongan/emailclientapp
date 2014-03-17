@@ -14,6 +14,8 @@ Ext.define('NewEmailApp.view.todo.ToDoGridPanel', {
     },{
         text : 'Completed',
         dataIndex : 'complete',
-        width: 120
+        width: 120,
+        trueText: 'Yes',
+        falseText: 'No' 
     }]
 })

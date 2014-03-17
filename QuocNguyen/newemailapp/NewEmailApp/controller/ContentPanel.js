@@ -99,8 +99,10 @@ Ext.define('NewEmailApp.controller.ContentPanel', {
   },
 
   loadEmail: function(component, email) {
-    this.email = email;
+    // this.email = email;
+    Ext.ComponentQuery.query('emailGrid')[0].getSelectionModel().select(email);
     this.fireEvent('changeEmail', this, email);
+
   },
 
   loadEmailList: function(target, folder) {
@@ -121,6 +123,7 @@ Ext.define('NewEmailApp.controller.ContentPanel', {
   },
 
   loadToDo: function(component, todo) {
+    Ext.ComponentQuery.query('todoGrid')[0].getSelectionModel().select(todo);
     this.todo = todo;
   },
 

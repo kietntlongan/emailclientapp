@@ -2,10 +2,10 @@ Ext.define('NewEmailApp.model.ToDo', {
     extend: 'Ext.data.Model',
     
     fields: [
-        { name: 'title', type: 'auto' },
-        { name: 'complete', type: 'auto' },
-        { name: 'duedate', type: 'auto' },
-        { name: 'notes', type: 'auto' }
+        { name: 'title', type: 'string' },
+        { name: 'complete', type: 'bool' },
+        { name: 'duedate', type: 'auto'},
+        { name: 'notes', type: 'string' }
 
     ],
     proxy: {

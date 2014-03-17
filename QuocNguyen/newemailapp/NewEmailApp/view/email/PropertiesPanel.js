@@ -8,7 +8,7 @@ Ext.define("NewEmailApp.view.email.PropertiesPanel", {
     '<p><b>Subject:</b></p>',
     '{subject}<br/>',
     '<p><b>Received:</b></p>',
-    '{received}<br/>',
+    '{received:date("F j, Y g:iA")}<br/>',
     '<p><b>From:</b></p>',
     '{from}<br/>',
     '<p><b>To:</b></p>',

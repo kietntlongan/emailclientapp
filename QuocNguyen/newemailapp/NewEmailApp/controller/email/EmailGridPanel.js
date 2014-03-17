@@ -15,28 +15,5 @@ Ext.define('NewEmailApp.controller.email.EmailGridPanel', {
     		itemId: viewId
     }
     return cfg;
-  },
-
-  init: function(application){
-    var me = this,
-        listViewSelector, editViewId, editButtonSelector;
-
-    listViewSelector = 'userlist#' + me.getViewId('userlist');
-    editViewId = me.getViewId('useredit');
-    editButtonSelector = 'useredit#' + editViewId + ' button[action=save]';
-    me.control(listViewSelector, {
-        itemdblclick: me.editUser
-      }
-    );
-    me.control(editButtonSelector, {
-        click: this.updateUser
-      }
-    );
-    
-    me.listen({
-      controller: {
-        '*' : {userupdated: me.onUserUpdated}
-      }
-    });
-  },
+  }
 });

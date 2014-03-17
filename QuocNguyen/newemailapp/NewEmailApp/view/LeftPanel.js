@@ -5,6 +5,7 @@ Ext.define("NewEmailApp.view.LeftPanel", {
 	    type: 'accordion'
 	},
 	collapsible: true,
-	flex: 1,
+	width:200,
 	title: 'Left Panel',
+	split: true
 });

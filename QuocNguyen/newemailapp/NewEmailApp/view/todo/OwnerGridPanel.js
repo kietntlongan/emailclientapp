@@ -4,6 +4,8 @@ Ext.define('NewEmailApp.view.todo.OwnerGridPanel', {
     anchor: '100%',
     title: '<strong>To Dos</strong>',
     store: 'Owners',
+    hideHeaders: true,
+    rowLines: false, 
     columns: [
         {
             xtype: 'gridcolumn',

@@ -7,7 +7,8 @@ Ext.define("NewEmailApp.view.RightPanel", {
 	config: {
 		email: null
 	},
-	flex: 1,
+	width:200,
 	collapsible: true,
 	title: 'Information',
+	split: true
 });
