@@ -18,8 +18,7 @@ Ext.define('FDUIEmailPractice.view.Viewport', {
     },{
         region: 'west',
         xtype: 'leftpanel',
-        title: 'Left Panel',
-        collapsible: true,
+//        title: 'Left Panel',
         width: 150
     },{
         region: 'center',

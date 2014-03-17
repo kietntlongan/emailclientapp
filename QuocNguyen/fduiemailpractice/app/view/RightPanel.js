@@ -4,19 +4,34 @@ Ext.define("FDUIEmailPractice.view.RightPanel", {
 	layout: {
 	    type: 'accordion'
 	},
-	
+	config: {
+		email: null
+	},
 	collapsible: true,
 	title: 'Information',
-	
 	initComponent: function() {
 	    var me = this;
 	
 	    Ext.applyIf(me, {
 	        items: [
 	            {
-	                xtype: 'panel',
+	            	xtype: 'panel',
+	            	itemId : 'propertiesPanel',		            
+	                bodypadding: 12,
 	                title: '<strong>Properties</strong>',
-	                html: 'Properties content here',
+		            tpl: [
+		    		'<div>',
+		    		'<p><b>Subject:</b></p>',
+		    		'{subject}<br/>',
+		    		'<p><b>Received:</b></p>',
+		    		'{received}<br/>',
+		    		'<p><b>From:</b></p>',
+		    		'{from}<br/>',
+		    		'<p><b>To:</b></p>',
+		    		'{to}<br/>',
+		    		'</div>'
+		    		],
+	                //html: 'Properties content here',
 	                //store: 'FolderEmails',
 	
 	                viewConfig: {
@@ -26,7 +41,7 @@ Ext.define("FDUIEmailPractice.view.RightPanel", {
 	            {
 	                xtype: 'panel',
 	                title: '<strong>Related</strong>',
-	                html: 'Related content here',
+	                html: 'No related messages',
 	                viewConfig: {
 	
 	                }
@@ -34,10 +49,19 @@ Ext.define("FDUIEmailPractice.view.RightPanel", {
 	        ]
 	    });
 	    me.callParent(arguments);
+	},
+	refreshTemplate: function(){
+		//var button = this.down('#edit');
+		if (this.getEmail()) {
+			this.down('#propertiesPanel').update(this.getEmail().getData());
+			//this.update(this.getEmail().getData());
+//			button.enable();
+		} else {
+			this.update(' ');
+//			button.disable();
+		}
+	},
+	updateEmail: function(email) {
+	    this.refreshTemplate();
 	}
-	
-
-
-
-
 });

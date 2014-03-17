@@ -437,6 +437,94 @@
         "name": "FolderEmail",
         "fields": "id:int:null,name:auto:null"
       }
+    },
+    "app/model/Person.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "31d5356142a167c72422f7902f19df3c583f3249",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "modelNamespace": "FDUIEmailPractice.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "Person",
+        "name": "Person",
+        "fields": "title:auto:null,complete:auto:null,duedate:auto:null,notes:auto:null"
+      }
+    },
+    "app/model/ToDo.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "31d5356142a167c72422f7902f19df3c583f3249",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "modelNamespace": "FDUIEmailPractice.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "ToDo",
+        "name": "ToDo",
+        "fields": "title:auto:null,complete:auto:null,duedate:auto:null,notes:auto:null"
+      }
+    },
+    "app/controller/ToDo.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "controllerName": "ToDo",
+        "controllerFileName": "ToDo",
+        "name": "ToDo",
+        "controllerNamespace": "FDUIEmailPractice.controller"
+      }
+    },
+    "app/model/Owner.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "31d5356142a167c72422f7902f19df3c583f3249",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "modelNamespace": "FDUIEmailPractice.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "Owner",
+        "name": "Owner",
+        "fields": "owner:auto:null"
+      }
+    },
+    "app/view/MainToolbar.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "viewName": "MainToolbar",
+        "name": "MainToolbar",
+        "viewFileName": "MainToolbar"
+      }
+    },
+    "app/view/EditEmailWindow.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "viewName": "EditEmailWindow",
+        "name": "EditEmailWindow",
+        "viewFileName": "EditEmailWindow"
+      }
+    },
+    "app/controller/FullTextSearch.js": {
+      "source": "{controllerFileName}.js.tpl.merge",
+      "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "controllerName": "FullTextSearch",
+        "controllerFileName": "FullTextSearch",
+        "name": "FullTextSearch",
+        "controllerNamespace": "FDUIEmailPractice.controller"
+      }
+    },
+    "app/view/EditToDoWindow.js": {
+      "source": "{viewFileName}.js.tpl.merge",
+      "version": "acde5ea901286ca2f976bcddea23e159dbaa0e6f",
+      "parameters": {
+        "appName": "FDUIEmailPractice",
+        "viewName": "EditToDoWindow",
+        "name": "EditToDoWindow",
+        "viewFileName": "EditToDoWindow"
+      }
     }
   }
 }

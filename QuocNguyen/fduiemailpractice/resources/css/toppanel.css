@@ -148,7 +148,8 @@
 }
 
 .icobtnsearch {	
-	background-image: url("../../images/custom/icons/glass.jpg");	
+	/*background-image: url("../../images/custom/icons/glass.jpg");*/	
+	background-image: url("../images/searchPlus.png");
 }
 
 .whitebtn {

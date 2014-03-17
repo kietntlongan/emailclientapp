@@ -7,8 +7,9 @@ Ext.define('FDUIEmailPractice.Application', {
         // TODO: add views here
     ],
 
-    controllers: ['FDUIEmailPractice.controller.LeftPanel',
-                  'FDUIEmailPractice.controller.Email'
+    controllers: ['FDUIEmailPractice.controller.Email',
+                  'FDUIEmailPractice.controller.ToDo',
+                  'FDUIEmailPractice.controller.FullTextSearch'
     ],
 
     stores: [

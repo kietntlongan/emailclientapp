@@ -1,6 +1,5 @@
 Ext.define('FDUIEmailPractice.view.Main', {
 	extend: 'Ext.panel.Panel',
-	title: 'Main Panel',
 	requires:[
 	'Ext.layout.container.Border',
 	'FDUIEmailPractice.view.MainPanel', 
@@ -9,6 +8,8 @@ Ext.define('FDUIEmailPractice.view.Main', {
 	layout: {
 	    type: 'border'
 	},
+//	title: 'Main Panel',
+	collapsible: true,
 	xtype: 'contentpanel',
 	items: [{
 	    region: 'center',

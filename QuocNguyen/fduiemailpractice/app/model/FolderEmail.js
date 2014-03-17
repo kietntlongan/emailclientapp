@@ -15,13 +15,13 @@ Ext.define('FDUIEmailPractice.model.FolderEmail', {
 	},
     associations : [ {
         type : 'hasMany',
-        model : 'FDUIEmailPractice.model.FolderSub',
+        model : 'FDUIEmailPractice.model.FolderEmail',
         name : 'children', // default: hasMany model name lower case pluralized
         //foreignKey : 'customer_id', // default: model name lower case _id
 
         autoLoad: false // This will load the store as soon as orders() is referenced
 
-    } ,
+    },
     {
         type : 'hasMany',
         model : 'FDUIEmailPractice.model.Email',
