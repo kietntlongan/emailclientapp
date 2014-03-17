@@ -10,5 +10,9 @@ Ext.define("NewEmailApp.view.RightPanel", {
 	width:200,
 	collapsible: true,
 	title: 'Information',
-	split: true
+	split: true,
+	tools: [{
+        xtype: 'tool',
+        type: 'gear'
+    }],
 });

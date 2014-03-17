@@ -3,5 +3,14 @@ Ext.define("NewEmailApp.view.email.RelatedPanel", {
 	xtype: 'relatedpanel',
 	title: '<strong>Related</strong>',
 	collapsible: true,
+	tools: [
+	    {
+	        xtype: 'tool',
+	        type: 'maximize'
+	    },
+	    {
+	        xtype: 'tool',
+	        type: 'gear'
+	    }],
 	html: 'No related messages'
 });

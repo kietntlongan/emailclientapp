@@ -3,6 +3,10 @@ Ext.define("NewEmailApp.view.email.PropertiesPanel", {
   xtype: 'propertiespanel',
   bodypadding: 12,
   title: '<strong>Properties</strong>',
+  tools: [{
+          xtype: 'tool',
+          type: 'gear'
+      }],   
   tpl: [
     '<div>',
     '<p><b>Subject:</b></p>',
