@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ext/src/data/proxy/|ext/src/rtl/|ext/src/ux/grid/|ext/src/tab/|ext/packages/ext-locale/overrides/sv_SE/|ext/packages/ext-theme-neptune/overrides/toolbar/|ext/src/rtl/panel/|ext/src/selection/|ext/src/lang/|ext/packages/ext-locale/overrides/pt/|ext/packages/ext-locale/overrides/nl/|ext/src/tip/|ext/src/data/association/|ext/src/rtl/layout/component/|ext/packages/ext-locale/overrides/ja/|ext/packages/ext-theme-gray/build/|ext/src/ux/form/|ext/src/version/|ext/packages/ext-locale/overrides/sr_RS/|ext/packages/ext-locale/overrides/en_AU/|ext/src/data/reader/|ext/src/rtl/tree/|ext/packages/ext-locale/overrides/mk/|ext/packages/ext-theme-neutral/sass/example/|ext/packages/ext-locale/overrides/no_NB/|ext/packages/ext-theme-neptune/overrides/tab/|ext/packages/ext-theme-neptune/build/example/|ext/packages/ext-theme-classic/build/example/|ext/src/rtl/tab/|ext/src/ux/dd/|ext/packages/ext-theme-neptune/overrides/form/field/|ext/src/|ext/src/grid/header/|ext/packages/ext-locale/overrides/ru/|ext/src/layout/component/field/|ext/src/layout/container/border/|ext/src/ux/layout/|ext/src/grid/column/|app/view/|ext/packages/ext-locale/overrides/de/|ext/packages/ext-theme-base/sass/example/|ext/src/rtl/layout/component/field/|ext/builds/|ext/src/window/|ext/src/grid/|ext/packages/ext-theme-neptune/overrides/menu/|ext/packages/ext-theme-neptune/build/|ext/src/data/|ext/src/rtl/resizer/|ext/packages/ext-locale/overrides/ca/|ext/src/rtl/layout/|ext/src/form/field/|build/temp/production/SimpleEmail/sencha-compiler/|ext/src/ux/grid/menu/|.sencha/app/microloader/|ext/src/chart/|ext/packages/ext-theme-classic-sandbox/build/|ext/src/rtl/dom/|ext/src/rtl/layout/container/|ext/packages/ext-locale/overrides/fa/|ext/src/toolbar/|ext/src/ux/statusbar/|ext/src/rtl/view/|ext/src/layout/component/|ext/packages/ext-locale/overrides/he/|ext/src/resizer/|ext/packages/ext-locale/overrides/zh_CN/|ext/src/view/|ext/src/rtl/slider/|ext/packages/ext-theme-neptune/overrides/container/|ext/packages/ext-theme-neptune/sass/example/|ext/src/form/|ext/packages/ext-locale/overrides/da/|ext/packages/ext-theme-neptune/overrides/grid/|ext/src/layout/|ext/src/panel/|ext/src/app/domain/|ext/packages/ext-locale/overrides/zh_TW/|ext/src/picker/|ext/src/container/|ext/packages/ext-theme-neptune/overrides/resizer/|app/model/|ext/src/fx/|ext/src/fx/target/|ext/packages/ext-locale/overrides/el_GR/|ext/packages/ext-locale/overrides/no_NN/|ext/packages/ext-locale/overrides/pt_BR/|ext/packages/ext-theme-neptune/overrides/panel/|ext/packages/ext-theme-neptune/overrides/|ext/packages/ext-locale/overrides/id/|ext/src/ux/DataView/|ext/packages/ext-theme-gray/sass/example/|ext/packages/ext-locale/overrides/lv/|app/|ext/src/rtl/form/field/|ext/src/misc/|ext/packages/ext-theme-access/build/|ext/packages/ext-locale/overrides/fr_CA/|ext/src/ux/data/|ext/src/util/|ext/packages/ext-locale/overrides/fi/|ext/src/ux/|ext/src/chart/theme/|app/controller/|ext/packages/ext-locale/overrides/sr/|ext/src/perf/|ext/src/app/|ext/src/layout/container/boxOverflow/|ext/locale/|ext/src/dd/|build/temp/production/SimpleEmail/sencha-compiler/app/|ext/packages/ext-locale/overrides/ukr/|ext/src/diag/layout/|ext/src/draw/|ext/src/rtl/button/|ext/packages/ext-theme-classic-sandbox/build/example/|ext/packages/ext-theme-neptune/overrides/layout/component/|ext/src/grid/locking/|ext/packages/ext-theme-gray/build/example/|ext/packages/ext-locale/overrides/en/|ext/src/grid/plugin/|ext/src/button/|ext/|ext/src/chart/series/|ext/packages/ext-locale/overrides/tr/|ext/src/class/|ext/packages/ext-locale/overrides/bg/|ext/packages/ext-locale/overrides/en_GB/|ext/packages/ext-locale/overrides/ko/|ext/src/rtl/grid/plugin/|ext/src/state/|ext/packages/ext-locale/overrides/pl/|ext/src/layout/container/|app/store/|ext/src/grid/property/|ext/packages/ext-locale/overrides/fr/|ext/src/rtl/tip/|ext/src/menu/|ext/packages/ext-locale/overrides/th/|ext/src/rtl/layout/container/boxOverflow/|ext/src/ux/grid/filter/|ext/src/slider/|ext/packages/ext-locale/overrides/hr/|ext/packages/ext-locale/overrides/vn/|ext/packages/ext-locale/overrides/af/|ext/packages/ext-locale/overrides/cs/|ext/packages/ext-locale/overrides/hu/|ext/packages/ext-locale/overrides/gr/|ext/packages/ext-theme-access/sass/example/|ext/packages/ext-locale/overrides/pt_PT/|ext/src/draw/engine/|ext/packages/ext-locale/build/|ext/src/ux/event/|ext/src/data/writer/|ext/src/form/action/|ext/src/rtl/util/|ext/src/flash/|ext/packages/ext-theme-access/build/example/|ext/packages/ext-locale/overrides/es/|ext/packages/ext-locale/overrides/ro/|ext/src/rtl/grid/|ext/src/data/flash/|sass/example/|ext/src/ux/ajax/|ext/packages/ext-theme-neptune/overrides/picker/|ext/packages/ext-locale/overrides/et/|ext/packages/ext-locale/overrides/sl/|ext/src/direct/|ext/packages/ext-locale/overrides/it/|ext/packages/ext-theme-classic/sass/example/|ext/packages/ext-locale/overrides/lt/|ext/src/dom/|ext/src/rtl/selection/|ext/src/tree/plugin/|ext/src/rtl/grid/column/|ext/packages/ext-locale/overrides/sk/|ext/src/grid/feature/|ext/packages/ext-theme-classic-sandbox/sass/example/|ext/packages/ext-theme-neptune/overrides/grid/column/|ext/src/tree/|ext/packages/ext-theme-classic/build/|ext/src/rtl/dd/|ext/src/chart/axis/" kind="src" path=""/>
+	<classpathentry kind="src" path=".sencha/app/microloader"/>
+	<classpathentry excluding="view/|model/|controller/|store/" kind="src" path="app"/>
+	<classpathentry kind="src" path="app/controller"/>
+	<classpathentry kind="src" path="app/model"/>
+	<classpathentry kind="src" path="app/store"/>
+	<classpathentry kind="src" path="app/view"/>
+	<classpathentry excluding="app/" kind="src" path="build/temp/production/SimpleEmail/sencha-compiler"/>
+	<classpathentry kind="src" path="build/temp/production/SimpleEmail/sencha-compiler/app"/>
+	<classpathentry excluding="src/data/proxy/|src/rtl/|src/ux/grid/|src/tab/|packages/ext-locale/overrides/sv_SE/|packages/ext-theme-neptune/overrides/toolbar/|src/rtl/panel/|src/selection/|src/lang/|packages/ext-locale/overrides/pt/|packages/ext-locale/overrides/nl/|src/tip/|src/data/association/|src/rtl/layout/component/|packages/ext-locale/overrides/ja/|packages/ext-theme-gray/build/|src/ux/form/|src/version/|packages/ext-locale/overrides/sr_RS/|packages/ext-locale/overrides/en_AU/|src/data/reader/|src/rtl/tree/|packages/ext-locale/overrides/mk/|packages/ext-theme-neutral/sass/example/|packages/ext-locale/overrides/no_NB/|packages/ext-theme-neptune/overrides/tab/|packages/ext-theme-neptune/build/example/|packages/ext-theme-classic/build/example/|src/rtl/tab/|src/ux/dd/|packages/ext-theme-neptune/overrides/form/field/|src/|src/grid/header/|packages/ext-locale/overrides/ru/|src/layout/component/field/|src/layout/container/border/|src/ux/layout/|src/grid/column/|packages/ext-locale/overrides/de/|packages/ext-theme-base/sass/example/|src/rtl/layout/component/field/|builds/|src/window/|src/grid/|packages/ext-theme-neptune/overrides/menu/|packages/ext-theme-neptune/build/|src/data/|src/rtl/resizer/|packages/ext-locale/overrides/ca/|src/rtl/layout/|src/form/field/|src/ux/grid/menu/|src/chart/|packages/ext-theme-classic-sandbox/build/|src/rtl/dom/|src/rtl/layout/container/|packages/ext-locale/overrides/fa/|src/toolbar/|src/ux/statusbar/|src/rtl/view/|src/layout/component/|packages/ext-locale/overrides/he/|src/resizer/|packages/ext-locale/overrides/zh_CN/|src/view/|src/rtl/slider/|packages/ext-theme-neptune/overrides/container/|packages/ext-theme-neptune/sass/example/|src/form/|packages/ext-locale/overrides/da/|packages/ext-theme-neptune/overrides/grid/|src/layout/|src/panel/|src/app/domain/|packages/ext-locale/overrides/zh_TW/|src/picker/|src/container/|packages/ext-theme-neptune/overrides/resizer/|src/fx/|src/fx/target/|packages/ext-locale/overrides/el_GR/|packages/ext-locale/overrides/no_NN/|packages/ext-locale/overrides/pt_BR/|packages/ext-theme-neptune/overrides/panel/|packages/ext-theme-neptune/overrides/|packages/ext-locale/overrides/id/|src/ux/DataView/|packages/ext-theme-gray/sass/example/|packages/ext-locale/overrides/lv/|src/rtl/form/field/|src/misc/|packages/ext-theme-access/build/|packages/ext-locale/overrides/fr_CA/|src/ux/data/|src/util/|packages/ext-locale/overrides/fi/|src/ux/|src/chart/theme/|packages/ext-locale/overrides/sr/|src/perf/|src/app/|src/layout/container/boxOverflow/|locale/|src/dd/|packages/ext-locale/overrides/ukr/|src/diag/layout/|src/draw/|src/rtl/button/|packages/ext-theme-classic-sandbox/build/example/|packages/ext-theme-neptune/overrides/layout/component/|src/grid/locking/|packages/ext-theme-gray/build/example/|packages/ext-locale/overrides/en/|src/grid/plugin/|src/button/|src/chart/series/|packages/ext-locale/overrides/tr/|src/class/|packages/ext-locale/overrides/bg/|packages/ext-locale/overrides/en_GB/|packages/ext-locale/overrides/ko/|src/rtl/grid/plugin/|src/state/|packages/ext-locale/overrides/pl/|src/layout/container/|src/grid/property/|packages/ext-locale/overrides/fr/|src/rtl/tip/|src/menu/|packages/ext-locale/overrides/th/|src/rtl/layout/container/boxOverflow/|src/ux/grid/filter/|src/slider/|packages/ext-locale/overrides/hr/|packages/ext-locale/overrides/vn/|packages/ext-locale/overrides/af/|packages/ext-locale/overrides/cs/|packages/ext-locale/overrides/hu/|packages/ext-locale/overrides/gr/|packages/ext-theme-access/sass/example/|packages/ext-locale/overrides/pt_PT/|src/draw/engine/|packages/ext-locale/build/|src/ux/event/|src/data/writer/|src/form/action/|src/rtl/util/|src/flash/|packages/ext-theme-access/build/example/|packages/ext-locale/overrides/es/|packages/ext-locale/overrides/ro/|src/rtl/grid/|src/data/flash/|src/ux/ajax/|packages/ext-theme-neptune/overrides/picker/|packages/ext-locale/overrides/et/|packages/ext-locale/overrides/sl/|src/direct/|packages/ext-locale/overrides/it/|packages/ext-theme-classic/sass/example/|packages/ext-locale/overrides/lt/|src/dom/|src/rtl/selection/|src/tree/plugin/|src/rtl/grid/column/|packages/ext-locale/overrides/sk/|src/grid/feature/|packages/ext-theme-classic-sandbox/sass/example/|packages/ext-theme-neptune/overrides/grid/column/|src/tree/|packages/ext-theme-classic/build/|src/rtl/dd/|src/chart/axis/" kind="src" path="ext"/>
+	<classpathentry kind="src" path="ext/builds"/>
+	<classpathentry kind="src" path="ext/locale"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/af"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/bg"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ca"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/cs"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/da"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/de"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/el_GR"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/en"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/en_AU"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/en_GB"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/es"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/et"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/fa"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/fi"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/fr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/fr_CA"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/gr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/he"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/hr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/hu"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/id"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/it"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ja"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ko"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/lt"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/lv"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/mk"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/nl"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/no_NB"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/no_NN"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/pl"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/pt"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/pt_BR"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/pt_PT"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ro"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ru"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/sk"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/sl"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/sr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/sr_RS"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/sv_SE"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/th"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/tr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/ukr"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/vn"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/zh_CN"/>
+	<classpathentry kind="src" path="ext/packages/ext-locale/overrides/zh_TW"/>
+	<classpathentry excluding="example/" kind="src" path="ext/packages/ext-theme-access/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-access/build/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-access/sass/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-base/sass/example"/>
+	<classpathentry excluding="example/" kind="src" path="ext/packages/ext-theme-classic-sandbox/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-classic-sandbox/build/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-classic-sandbox/sass/example"/>
+	<classpathentry excluding="example/" kind="src" path="ext/packages/ext-theme-classic/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-classic/build/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-classic/sass/example"/>
+	<classpathentry excluding="example/" kind="src" path="ext/packages/ext-theme-gray/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-gray/build/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-gray/sass/example"/>
+	<classpathentry excluding="example/" kind="src" path="ext/packages/ext-theme-neptune/build"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/build/example"/>
+	<classpathentry excluding="toolbar/|tab/|form/field/|menu/|container/|grid/|resizer/|panel/|layout/component/|picker/|grid/column/" kind="src" path="ext/packages/ext-theme-neptune/overrides"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/container"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/form/field"/>
+	<classpathentry excluding="column/" kind="src" path="ext/packages/ext-theme-neptune/overrides/grid"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/grid/column"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/layout/component"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/menu"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/panel"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/picker"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/resizer"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/tab"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/overrides/toolbar"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neptune/sass/example"/>
+	<classpathentry kind="src" path="ext/packages/ext-theme-neutral/sass/example"/>
+	<classpathentry excluding="data/proxy/|rtl/|ux/grid/|tab/|rtl/panel/|selection/|lang/|tip/|data/association/|rtl/layout/component/|ux/form/|version/|data/reader/|rtl/tree/|rtl/tab/|ux/dd/|grid/header/|layout/component/field/|layout/container/border/|ux/layout/|grid/column/|rtl/layout/component/field/|window/|grid/|data/|rtl/resizer/|rtl/layout/|form/field/|ux/grid/menu/|chart/|rtl/dom/|rtl/layout/container/|toolbar/|ux/statusbar/|rtl/view/|layout/component/|resizer/|view/|rtl/slider/|form/|layout/|panel/|app/domain/|picker/|container/|fx/|fx/target/|ux/DataView/|rtl/form/field/|misc/|ux/data/|util/|ux/|chart/theme/|perf/|app/|layout/container/boxOverflow/|dd/|diag/layout/|draw/|rtl/button/|grid/locking/|grid/plugin/|button/|chart/series/|class/|rtl/grid/plugin/|state/|layout/container/|grid/property/|rtl/tip/|menu/|rtl/layout/container/boxOverflow/|ux/grid/filter/|slider/|draw/engine/|ux/event/|data/writer/|form/action/|rtl/util/|flash/|rtl/grid/|data/flash/|ux/ajax/|direct/|dom/|rtl/selection/|tree/plugin/|rtl/grid/column/|grid/feature/|tree/|rtl/dd/|chart/axis/" kind="src" path="ext/src"/>
+	<classpathentry excluding="domain/" kind="src" path="ext/src/app"/>
+	<classpathentry kind="src" path="ext/src/app/domain"/>
+	<classpathentry kind="src" path="ext/src/button"/>
+	<classpathentry excluding="theme/|series/|axis/" kind="src" path="ext/src/chart"/>
+	<classpathentry kind="src" path="ext/src/chart/axis"/>
+	<classpathentry kind="src" path="ext/src/chart/series"/>
+	<classpathentry kind="src" path="ext/src/chart/theme"/>
+	<classpathentry kind="src" path="ext/src/class"/>
+	<classpathentry kind="src" path="ext/src/container"/>
+	<classpathentry excluding="proxy/|association/|reader/|writer/|flash/" kind="src" path="ext/src/data"/>
+	<classpathentry kind="src" path="ext/src/data/association"/>
+	<classpathentry kind="src" path="ext/src/data/flash"/>
+	<classpathentry kind="src" path="ext/src/data/proxy"/>
+	<classpathentry kind="src" path="ext/src/data/reader"/>
+	<classpathentry kind="src" path="ext/src/data/writer"/>
+	<classpathentry kind="src" path="ext/src/dd"/>
+	<classpathentry kind="src" path="ext/src/diag/layout"/>
+	<classpathentry kind="src" path="ext/src/direct"/>
+	<classpathentry kind="src" path="ext/src/dom"/>
+	<classpathentry excluding="engine/" kind="src" path="ext/src/draw"/>
+	<classpathentry kind="src" path="ext/src/draw/engine"/>
+	<classpathentry kind="src" path="ext/src/flash"/>
+	<classpathentry excluding="field/|action/" kind="src" path="ext/src/form"/>
+	<classpathentry kind="src" path="ext/src/form/action"/>
+	<classpathentry kind="src" path="ext/src/form/field"/>
+	<classpathentry excluding="target/" kind="src" path="ext/src/fx"/>
+	<classpathentry kind="src" path="ext/src/fx/target"/>
+	<classpathentry excluding="header/|column/|locking/|plugin/|property/|feature/" kind="src" path="ext/src/grid"/>
+	<classpathentry kind="src" path="ext/src/grid/column"/>
+	<classpathentry kind="src" path="ext/src/grid/feature"/>
+	<classpathentry kind="src" path="ext/src/grid/header"/>
+	<classpathentry kind="src" path="ext/src/grid/locking"/>
+	<classpathentry kind="src" path="ext/src/grid/plugin"/>
+	<classpathentry kind="src" path="ext/src/grid/property"/>
+	<classpathentry kind="src" path="ext/src/lang"/>
+	<classpathentry excluding="component/field/|container/border/|component/|container/boxOverflow/|container/" kind="src" path="ext/src/layout"/>
+	<classpathentry excluding="field/" kind="src" path="ext/src/layout/component"/>
+	<classpathentry kind="src" path="ext/src/layout/component/field"/>
+	<classpathentry excluding="border/|boxOverflow/" kind="src" path="ext/src/layout/container"/>
+	<classpathentry kind="src" path="ext/src/layout/container/border"/>
+	<classpathentry kind="src" path="ext/src/layout/container/boxOverflow"/>
+	<classpathentry kind="src" path="ext/src/menu"/>
+	<classpathentry kind="src" path="ext/src/misc"/>
+	<classpathentry kind="src" path="ext/src/panel"/>
+	<classpathentry kind="src" path="ext/src/perf"/>
+	<classpathentry kind="src" path="ext/src/picker"/>
+	<classpathentry kind="src" path="ext/src/resizer"/>
+	<classpathentry excluding="panel/|layout/component/|tree/|tab/|layout/component/field/|resizer/|layout/|dom/|layout/container/|view/|slider/|form/field/|button/|grid/plugin/|tip/|layout/container/boxOverflow/|util/|grid/|selection/|grid/column/|dd/" kind="src" path="ext/src/rtl"/>
+	<classpathentry kind="src" path="ext/src/rtl/button"/>
+	<classpathentry kind="src" path="ext/src/rtl/dd"/>
+	<classpathentry kind="src" path="ext/src/rtl/dom"/>
+	<classpathentry kind="src" path="ext/src/rtl/form/field"/>
+	<classpathentry excluding="plugin/|column/" kind="src" path="ext/src/rtl/grid"/>
+	<classpathentry kind="src" path="ext/src/rtl/grid/column"/>
+	<classpathentry kind="src" path="ext/src/rtl/grid/plugin"/>
+	<classpathentry excluding="component/|component/field/|container/|container/boxOverflow/" kind="src" path="ext/src/rtl/layout"/>
+	<classpathentry excluding="field/" kind="src" path="ext/src/rtl/layout/component"/>
+	<classpathentry kind="src" path="ext/src/rtl/layout/component/field"/>
+	<classpathentry excluding="boxOverflow/" kind="src" path="ext/src/rtl/layout/container"/>
+	<classpathentry kind="src" path="ext/src/rtl/layout/container/boxOverflow"/>
+	<classpathentry kind="src" path="ext/src/rtl/panel"/>
+	<classpathentry kind="src" path="ext/src/rtl/resizer"/>
+	<classpathentry kind="src" path="ext/src/rtl/selection"/>
+	<classpathentry kind="src" path="ext/src/rtl/slider"/>
+	<classpathentry kind="src" path="ext/src/rtl/tab"/>
+	<classpathentry kind="src" path="ext/src/rtl/tip"/>
+	<classpathentry kind="src" path="ext/src/rtl/tree"/>
+	<classpathentry kind="src" path="ext/src/rtl/util"/>
+	<classpathentry kind="src" path="ext/src/rtl/view"/>
+	<classpathentry kind="src" path="ext/src/selection"/>
+	<classpathentry kind="src" path="ext/src/slider"/>
+	<classpathentry kind="src" path="ext/src/state"/>
+	<classpathentry kind="src" path="ext/src/tab"/>
+	<classpathentry kind="src" path="ext/src/tip"/>
+	<classpathentry kind="src" path="ext/src/toolbar"/>
+	<classpathentry excluding="plugin/" kind="src" path="ext/src/tree"/>
+	<classpathentry kind="src" path="ext/src/tree/plugin"/>
+	<classpathentry kind="src" path="ext/src/util"/>
+	<classpathentry excluding="grid/|form/|dd/|layout/|grid/menu/|statusbar/|DataView/|data/|grid/filter/|event/|ajax/" kind="src" path="ext/src/ux"/>
+	<classpathentry kind="src" path="ext/src/ux/ajax"/>
+	<classpathentry kind="src" path="ext/src/ux/data"/>
+	<classpathentry kind="src" path="ext/src/ux/DataView"/>
+	<classpathentry kind="src" path="ext/src/ux/dd"/>
+	<classpathentry kind="src" path="ext/src/ux/event"/>
+	<classpathentry kind="src" path="ext/src/ux/form"/>
+	<classpathentry excluding="menu/|filter/" kind="src" path="ext/src/ux/grid"/>
+	<classpathentry kind="src" path="ext/src/ux/grid/filter"/>
+	<classpathentry kind="src" path="ext/src/ux/grid/menu"/>
+	<classpathentry kind="src" path="ext/src/ux/layout"/>
+	<classpathentry kind="src" path="ext/src/ux/statusbar"/>
+	<classpathentry kind="src" path="ext/src/version"/>
+	<classpathentry kind="src" path="ext/src/view"/>
+	<classpathentry kind="src" path="ext/src/window"/>
+	<classpathentry kind="src" path="sass/example"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

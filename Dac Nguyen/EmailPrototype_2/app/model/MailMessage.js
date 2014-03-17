@@ -18,7 +18,8 @@ Ext.define('EmailPrototype.model.MailMessage', {
 
     requires: [
         'Ext.data.Field',
-        'Ext.data.association.BelongsTo'
+        'Ext.data.association.BelongsTo',
+        'Ext.'
     ],
     uses: [
         'EmailPrototype.model.MailFolder'
