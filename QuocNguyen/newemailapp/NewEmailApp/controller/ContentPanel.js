@@ -21,7 +21,6 @@ Ext.define('NewEmailApp.controller.ContentPanel', {
 
     controller = me.createController('MainToolBar');
     controller = me.createController('email.EmailGridPanel');
-    controller = me.createController('email.EmailGridPanel');
     controller = me.createController('todo.ToDoGridPanel');
 
     me.control({
