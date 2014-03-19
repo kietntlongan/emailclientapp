@@ -1,3 +1,0 @@
-It's using Kent's approach
-	- Complete create views/controllers and define Viewport dynamically
-	- In progess to restructure, refactor the code to handle events as Kent's approach
